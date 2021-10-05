@@ -1,0 +1,178 @@
+@import 'colors';
+@import 'layout';
+@import 'media';
+
+//reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: auto;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    background: $Very-dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+//common class styles
+
+@mixin background {
+    height: 10rem; //card height 2 to -1
+    background-repeat: no-repeat;
+    background-size: 4.3rem;
+    background-position: top -0.6rem right 1rem;
+
+    @media (min-width:700px) {
+        height: 14.5rem;
+    }
+}
+
+.bottom-card {
+    background: $Dark-blue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75%;
+    transition: height 0.1s ease-in-out;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+
+    .header {
+        font-weight: 600;
+
+        svg:hover {
+            //not working :'(
+            fill: white;
+        }
+
+    }
+
+    .hours {
+        :first-child {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-top: 0.4rem;
+        }
+
+        :last-child {
+            font-size: 15px;
+            color: $Pale-Blue;
+            margin-top: 1.5rem;
+        }
+    }
+
+}
+
+.bottom-card:hover {
+    background: hsl(235, 46%, 30%);
+
+    @media (min-width:700px) {
+        height: 90%;
+        transition: height 0.2s ease-in-out;
+    }
+}
+
+.container > * {
+    position: relative;
+    border-radius: 1rem;
+}
+
+//select all div except 1st div element from the .container 
+//.container > div:not(:first-child) {
+//    //for bottom class
+//}
+
+.one {
+    background: $Dark-blue;
+    grid-area: a;
+
+
+
+    .hero {
+        background: $Blue;
+        padding: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 1rem;
+        transition: padding-left .2s ease-out;
+
+        img {
+            width: 4rem;
+            outline: 3px solid;
+            border-radius: 50%;
+        }
+
+        .info {
+            margin-left: 1.2rem;
+            font-weight: 500;
+
+            :first-child {
+                color: $Pale-Blue;
+                font-size: 14px;
+            }
+
+            :last-child {
+                margin-top: 0.5rem;
+                color: white;
+                font-weight: 300;
+                font-size: 23px;
+            }
+        }
+    }
+
+    .period {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1.5rem 0;
+        font-weight: 500;
+        color: $Desaturated-blue;
+
+        :hover {
+            color: white;
+        }
+    }
+
+}
+
+.two {
+    background: url("https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/f4a25e1ca84f15e6b8c2fbedb90770fb6e4338fd/images/icon-work.svg"), $Light-red;
+    @include background;
+
+}
+
+.three {
+    background: url("https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/f4a25e1ca84f15e6b8c2fbedb90770fb6e4338fd/images/icon-play.svg"), $Soft-blue;
+    @include background;
+}
+
+.four {
+    background: url("https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/f4a25e1ca84f15e6b8c2fbedb90770fb6e4338fd/images/icon-study.svg"), $Light-red2;
+    @include background;
+}
+
+.five {
+    background: url("https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/f4a25e1ca84f15e6b8c2fbedb90770fb6e4338fd/images/icon-exercise.svg"), $Lime-green;
+    @include background;
+    background-position: top right 1rem;
+}
+
+.six {
+    background: url("https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/f4a25e1ca84f15e6b8c2fbedb90770fb6e4338fd/images/icon-social.svg"), $Violet;
+    @include background;
+}
+
+.seven {
+    background: url("https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/f4a25e1ca84f15e6b8c2fbedb90770fb6e4338fd/images/icon-self-care.svg"), $Soft-orange;
+    @include background;
+}

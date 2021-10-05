@@ -1,0 +1,88 @@
+.container {
+    height: auto;
+    width: 90vw;
+    margin: 5rem 0;
+    display: grid;
+    grid-gap: 1.5rem 0;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 10rem));
+    grid-auto-rows: auto;
+    grid-template-areas:
+
+        "a a"
+        "a a"
+        "b b"
+        "b b"
+        "c c"
+        "c c"
+        "d d"
+        "d d"
+        "e e"
+        "e e"
+        "f f"
+        "f f"
+        "g g"
+        "g g"
+    ;
+
+    @media (min-width: 700px) {
+        height: auto;
+        width: 80vw;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        grid-gap: 2rem;
+        grid-template-areas:
+            "a a b b c c d d"
+            "a a b b c c d d"
+            "a a e e f f g g"
+            "a a e e f f g g";
+    }
+
+    > * {
+        grid-row: 2/3;
+    }
+
+    .one {
+        grid-area: a;
+    }
+
+    .two {
+        grid-area: b;
+    }
+
+    .three {
+        grid-area: c;
+    }
+
+    .four {
+        grid-area: d;
+    }
+
+    .five {
+        grid-area: e;
+    }
+
+    .six {
+        grid-area: f;
+    }
+
+    .seven {
+        grid-area: g;
+    }
+}
+
+//common classes
+.hero {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.hours {
+    display: flex;
+    justify-content: space-between;
+}
