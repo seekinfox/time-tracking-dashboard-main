@@ -28,9 +28,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/main/Screenshot_2021-10-07%20Frontend%20Mentor%20Time%20tracking%20dashboard.png](https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/main/Screenshot_2021-10-07%20Frontend%20Mentor%20Time%20tracking%20dashboard.png)
 
-![](./screenshot.jpg)
+![https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/main/Screenshot_2021-10-07%20Frontend%20Mentor%20Time%20tracking%20dashboard(1).png](https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/main/Screenshot_2021-10-07%20Frontend%20Mentor%20Time%20tracking%20dashboard(1).png)
 
 
 ### Links
@@ -46,14 +46,18 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- SCSS/SASS
+- javaSript
+- JSON
 - Mobile-first workflow
 
 ### What I learned
 
-
+how to fetch JSON file from the server and represent the data in the web-application.
 
 ### Continued development
 
+json /javascrpt/css grid
 
 ## Author
 
