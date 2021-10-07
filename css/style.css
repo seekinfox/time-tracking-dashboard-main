@@ -116,6 +116,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 700px) {
+  html,
+body {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .bottom-card {
   background: #1c1f4a;
