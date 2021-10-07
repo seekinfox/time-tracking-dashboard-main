@@ -291,4 +291,8 @@ body {
   }
 }
 
+svg:hover, path:hover {
+  fill: white;
+}
+
 /*# sourceMappingURL=style.css.map */

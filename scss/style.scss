@@ -184,3 +184,7 @@ body {
     background: url("https://raw.githubusercontent.com/seekinfox/time-tracking-dashboard-main/f4a25e1ca84f15e6b8c2fbedb90770fb6e4338fd/images/icon-self-care.svg"), $Soft-orange;
     @include background;
 }
+
+svg:hover, path:hover {
+    fill: white;
+}
