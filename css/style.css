@@ -181,6 +181,8 @@ body {
   padding: 2rem;
   display: flex;
   justify-content: flex-start;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
   border-radius: 1rem;
   transition: padding-left 0.2s ease-out;
 }
@@ -212,6 +214,9 @@ body {
 }
 .one .period :hover {
   color: white;
+}
+.one .period p {
+  cursor: pointer;
 }
 
 .two {

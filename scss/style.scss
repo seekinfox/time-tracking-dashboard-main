@@ -59,6 +59,7 @@ body {
     }
 
     .hours {
+        text-transform: capitalize;
         :first-child {
             font-size: 2rem;
             font-weight: 300;
@@ -69,6 +70,7 @@ body {
             font-size: 15px;
             color: $Pale-Blue;
             margin-top: 1.5rem;
+            
         }
     }
 
@@ -104,6 +106,8 @@ body {
         padding: 2rem;
         display: flex;
         justify-content: flex-start;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
         border-radius: 1rem;
         transition: padding-left .2s ease-out;
 
@@ -137,10 +141,14 @@ body {
         padding: 1.5rem 0;
         font-weight: 500;
         color: $Desaturated-blue;
-
+        
         :hover {
             color: white;
         }
+        p {
+            cursor: pointer;
+        }
+       
     }
 
 }
