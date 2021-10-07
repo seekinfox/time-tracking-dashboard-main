@@ -22,20 +22,6 @@ div.bottom-card {
 div.one {
     @media(min-width: 700px) {
         
-        .hero:hover {
-            
-            padding-left: 5rem;
-            transition: padding-left .3s ease-in;
-            .info {
-                :first-child {
-                    margin-left: 0.3rem;
-                }
-                :last-child {
-                    margin-left: -1.5rem;
-                }
-            }
-        }
-        
         .hero {
             width: 100%;
             flex-direction: column;

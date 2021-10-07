@@ -72,16 +72,6 @@
 }
 
 @media (min-width: 700px) {
-  div.one .hero:hover {
-    padding-left: 5rem;
-    transition: padding-left 0.3s ease-in;
-  }
-  div.one .hero:hover .info :first-child {
-    margin-left: 0.3rem;
-  }
-  div.one .hero:hover .info :last-child {
-    margin-left: -1.5rem;
-  }
   div.one .hero {
     width: 100%;
     flex-direction: column;
@@ -145,6 +135,9 @@ body {
 }
 .bottom-card .header svg:hover {
   fill: white;
+}
+.bottom-card .hours {
+  text-transform: capitalize;
 }
 .bottom-card .hours :first-child {
   font-size: 2rem;
